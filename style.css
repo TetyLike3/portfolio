@@ -41,6 +41,17 @@
     box-sizing: border-box;
 }
 
+* a {
+    text-decoration: none;
+    color: var(--accent-colour-secondary);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+* a:hover {
+    color: var(--accent-colour);
+}
+
 body {
     background: var(--background-colour);
     color: #fff;
@@ -136,7 +147,7 @@ nav ul li a::after {
     background: var(--accent-colour);
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -4px;
 
     transition: 0.5s;
     opacity: 0;
@@ -259,10 +270,6 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
     color: var(--accent-colour);
     font-size: 14px;
-}
-
-.tab-contents ul li a {
-    color: var(--accent-colour-secondary);
 }
 
 .tab-contents {
