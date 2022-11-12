@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tety's website</title>
+</head>
+<body>
+
+    <!-- ------------[Header]------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <img src="images\logo.jpg" class="logo" draggable="false">
+            </nav>
+            <div class="header-text">
+                <p>very good roblox dev</p>
+                <h1>whats up guys <br> welcome to <span>my website</span></h1>
+            </div>
+            <p class="source-text">Source: Cosmic Science Inc. CSRS, June 2021</p>
+        </div>
+    </div>
+
+    <!-- ------------[About]------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\tety stare.png" draggable="false">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About <span>Tety</span></h1>
+                    <p>
+                        Tety is a 15 year old gamer & game designer all the way in the miserable hell called "East Midlands, United Kingdom".
+                        He LOVES to torture himself with the <span title="Attempt to perform arithmetic (add) on nil and number">funny red text</span> that shows up in the terminal when you make a mistake in your code.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game Design</span><br>ROBLOX programming & UI design</li>
+                            <li><span>Video Editing</span><br>Basic transitioning, FX, and balancing</li>
+                            <li><span>Web Development</span><br>This page :)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Game Design</span><br>Ever since June 2020, the moment it clicked into his head, he has been very addicted to scripting in ROBLOX Studio.
+                                He has used a few other game engines as well, but ROBLOX Studio was (and still pretty much is) his best home to this day.</li>
+                            <li><span>Video Editing</span><br>Since (probably) 2015, he was constantly working on videos for his Youtube channel.
+                                There were a few good videos, but most of them were just as bad as his common sense.
+                            </li>
+                            <li><span>Web Development</span><br>This is his first ever actual website.
+                                He hasn't really touched HTML or CSS before, except the times he messed with websites at school when he was bored,
+                                or was just editing text on google definitions,
+                                and the one time he made a card on <a href="https://github.com/Syknapse/Contribute-To-This-Project">that github contribution project.</a>
+                                Thanks to his great knowledge of general programming, however, this isn't as hard as it would be.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Game Design</span><br>Mostly from home, by friends and online tutorials/forums,
+                                had some primary school lessons around Scratch,
+                                and secondary CS lessons around <a href="https://www.pygame.org">the pygame library.</a>
+                            </li>
+                            <li><span>Video Editing</span><br>Started in ~2015, used Vegas Pro 15 and mostly just used the fading and text, until ~2018, when he switched to Hitfilm Express.
+                                He watched a tutorial on motion tracking (about 4 times) and used it pretty well. Also used the FX that came with his Content Creator package.
+                                He then switched to Davinci Resolve in 2022 after Hitfilm's revamp, which completely rid him of the addons he paid for.
+                                <br><i>(Not that it wasn't unfair. The package WAS cheap, and they must've removed the old addon system because of lisencing problems.)</i>
+                            </li>
+                            <li><span>Web Development</span><br>Making this page based on a tutorial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------[Services]------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Tety services</h1>
+    </div>
+
+
+    <!-- ------------[Portfolio]------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="services-list">
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
