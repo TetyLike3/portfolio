@@ -1,5 +1,6 @@
 :root {
     --accent-colour: #ff9a00;
+    --accent-colour-dark: #38342d;
     --accent-colour-secondary: #ca3232;
     --background-colour: #080808;
     --text-colour: #e6e6e6;
@@ -299,9 +300,35 @@ nav ul li a:hover::after {
     grid-gap: 40px;
     margin-top: 50px;
 }
+.facilities-list div {
+    background: var(--accent-colour-dark);
+    padding: 40px;
+    font-size: 14px;
+    border-radius: 16px;
+    border-right: 10px;
 
+    transition: 0.5s;
+}
+.facilities-list div:hover {
+    background: var(--accent-colour);
+    transform: translateY(-10px);
+}
+.facilities-list div i {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.facilities-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
 .facilities-list div img {
     margin: 20px 20px;
     max-width: 60%;
-    border: var(--accent-colour-secondary) solid 3px;
+    border: var(--accent-colour) solid 3px;
+}
+.facilities-list div a {
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
 }
