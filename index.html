@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5bf8b941f0.js" crossorigin="anonymous"></script>
-    <title>Tety's website</title>
+    <title>Testy's website</title>
 </head>
 <body>
 
@@ -38,9 +38,9 @@
                     <img src="images\tety stare.png" draggable="false">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="page-section-title">About <i>Tety</i></h1>
+                    <h1 class="page-section-title">About <i>TestyLike3</i></h1>
                     <p>
-                        Tety is a 15 year old gamer & game designer all the way in the miserable hell called "East Midlands, United Kingdom".
+                        TestyLike3 is a 15 year old gamer & game designer all the way in the miserable hell called "East Midlands, United Kingdom".
                         He LOVES to torture himself with the <span title="Attempt to perform arithmetic (add) on nil and number">funny red text</span> that shows up in the terminal when you make a mistake in your code.
                     </p>
                     <div class="tab-titles">
@@ -92,19 +92,19 @@
     <!-- ------------[Facilities]------------ -->
     <div id="facilities" class="page-section">
         <div class="container">
-            <h1 class="page-section-title">Tety Facilities</h1>
+            <h1 class="page-section-title">My Facilities</h1>
             <div class="facilities-list">
                 <div>
                     <i class="fa-solid fa-cube"></i>
                     <h2>Blender Modelling</h2>
-                    <p>Tety can make a simple model using Blender.
+                    <p>I can make a simple model using Blender.
                     </p>
                     <img src="images\sample model image.png">
                 </div>
                 <div>
                     <i class="fa-solid fa-window-restore"></i>
                     <h2>ROBLOX UI Design</h2>
-                    <p>Tety can make some very good UI.
+                    <p>I can make decent UI.
                         Most genres supported.
                     </p>
                     <img src="images\sample ui image.png">
@@ -112,7 +112,7 @@
                 <div>
                     <i class="fa-solid fa-clapperboard"></i>
                     <h2>Basic video editing</h2>
-                    <p>Tety can edit a video to cut out any unecessary parts.
+                    <p>I can easily edit a video to cut out any unecessary parts.
                     </p>
                     <img src="images\sample davinci image.png">
                 </div>
@@ -121,14 +121,52 @@
 
 
     <!-- ------------[Portfolio]------------ -->
-    <div id="portfolio">
+    <div id="portfolio" class="page-section">
         <div class="container">
+            <h1 class="page-section-title">My Projects</h1>
+            <div class="projects-list">
+                <h1 class="project-list-title">ROBLOX Projects</h1>
+                <div class="projects">
+                    <div>
+                        <h1 class="project-title">TEStYOS Incorporated Power Plant</h1>
+                        <p>
+                            Excuse the awful name. I made it when I was ~13 years old.
+                            <br><br> This was a project I was generally passionate about.
+                            It was a group that just had sci-fi styled games.
+                            <br> I started the group a few years ago and managed to get a friend on through a training session for Pinewood Emergency Team.
+                            <br> It wasn't exactly the best back then. The first public game wasn't even a functional game.
+                            It just had an elevator and a door in an arctic setting.
+                            <br><br> One of the two most popular (and only functional games) in the group was the Frigate.
+                            It was the project I was most passionate about at the time.
+                        </p>
+                    </div>
+                    <div class="image-list">
+                        <img src="images\TIPP blast door.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
 
     <script>
+        // Fade in page-section divs when scrolled to
+        window.addEventListener('scroll', function() {
+            var pageSections = document.querySelectorAll('.page-section');
+            for (var i = 0; i < pageSections.length; i++) {
+                var pageSection = pageSections[i];
+                var pageSectionTop = pageSection.getBoundingClientRect().top;
+                var pageSectionBottom = pageSection.getBoundingClientRect().bottom;
+                if (pageSectionTop < window.innerHeight && pageSectionBottom > 0) {
+                    pageSection.classList.add('active');
+                } else {
+                    pageSection.classList.remove('active');
+                }
+            }
+        });
+
+        // About section tabs
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
